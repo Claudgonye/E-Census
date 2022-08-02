@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Census | Respondent</title>
+    <link rel="stylesheet" href="../css/flexboxgrid.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <script src="https://kit.fontawesome.com/f0e18433e0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Header-->
+    <header id="main-header">
+        <div class="container">
+            <div class="row end-sm end-md end-lg center-xs middle-xs middle-sm middle-md middle-lg">
+                <div class="col-xs-12  col-sm-2 col-md-2 col-lg-2">
+                    <h1><span class="primary-text">E</span>-Census</h1>
+                </div>
+                <div class="col-xs-12  col-sm-10 col-md-10 col-lg-10">
+                    <nav id="navbar">
+                        <ul>
+                            <li class="current"><a href="#">Respondent</a></li>
+                            <li><a href="contact.php">Contact</a></li>
+                            <li><a href="logout.php">logout</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!--Features-->
+    <section id="features">
+        <div class="container">
+            <div class="row centre-xs center-sm center-md center-lg">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h2>household</h2>
+                    <p>A Population Census.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Features-->
+    <form method="POST">
+        <section id="features">
+            <div class="container">
+                <!-- <div class="col centre-xs center-sm center-md center-lg"> -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        
+                    <div class="form__item">
+                        <label for="RoofMaterial" class="form__label">First Name:</label>
+                        <input id="fname" type="text" class="form-control" name="fname" required/>
+                    </div>                           
+                    <div class="form__item">
+                        <label for="RoofMaterial" class="form__label">Last Name:</label>
+                        <input id="lname" type="text" class="form-control" name="lname" required/>
+                    </div>
+                        <div class="form__item">
+                        <label for="RoofMaterial" class="form__label">County:</label>
+                        <input id="County" type="text" class="form-control" name="County"  required/>
+                    </div>
+                    <div class="form__item">
+                        <label for="RoofMaterial" class="form__label">Constituency:</label>
+                        <input id="Constituency" type="text" class="form-control" name="Constituency" required/><br>
+                    </div>
+                    <div class="form__item">
+                        <label for="RoofMaterial" class="form__label">Ward:</label>
+                        <input id="Ward" type="text" class="form-control" name="Ward" required/>
+                    </div>
+                    <div class="form__item">
+                        <label for="RoofMaterial" class="form__label">Sex:</label>
+                        <select name="sex" class="form-control" id="sex"  required>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Non-binary">Non-binary</option>
+                        </select>
+                    </div>
+                    <div class="form__item">
+                        <label for="RoofMaterial" class="form__label">DOB :</label>
+                        <input id="dob" type="date" class="form-control" name="dob"  required/>
+                    </div>
+                    <div class="form__item">
+                        <label for="RoofMaterial" class="form__label">Age :</label>
+                        <input id="age" type="Number" class="form-control" name="age"  required/>
+                    </div>
+                    <div class="form__item">
+                        <label for="RoofMaterial" class="form__label">Religion :</label>
+                        <select class="form-control" name="religion" required>
+                            <option value="Christianity">Christianity</option>
+                            <option value="Islam">Islam</option>
+                            <option value="Hinduism">Hinduism</option>
+                            <option value="Irreligion">Irreligion</option>
+                        </select>
+                    </div>
+                    <div class="form__item">
+                        <label for="RoofMaterial" class="form__label">Martial Status :</label>
+                        <select name="martialStatus" class="form-control" required>
+                            <option value="Single">Single</option>
+                            <option value="Married">Married</option>
+                            <option value="Widowed">Widowed</option>
+                            <option value="Divorced">Divorced</option>
+                        </select>
+                    </div>
+                    <div class="form__item">
+                        <label for="RoofMaterial" class="form__label">Household Size :</label>
+                        <input id="householdsize" type="Number" class="form-control" name="householdsize"  required/>
+                    </div>
+                    <div class="form__item">
+                        <label for="RoofMaterial" class="form__label">School Attendence :</label>
+                        <input type="radio"  name="schoolattendance" value="Yes"/>
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="schoolattendance" value="No"/>
+                        <label for="no">No</label>
+                    </div>
+                    <div class="form__item">
+                        <label for="RoofMaterial" class="form__label">Educational Attainment :</label>
+                            <select name="educationalattainment" class="form-control" required>
+                                <option value="Primary Education">Primary Education</option>
+                                <option value="Secondary Education">Secondary Education</option>
+                                <option value="Higher Education">higher Education</option>
+                                <option value="None">None</option>
+                            </select>
+                    </div>
+                    <div class="form__item">
+                        <label for="RoofMaterial" class="form__label">Occupation:</label>
+                        <input id="occupation" type="text" class="form-control" name="occupation" required/>
+                    </div>
+                    <div class="form__item">
+                        <label for="RoofMaterial" class="form__label">Place Of Work:</label>
+                        <input id="placeofwork" type="text" class="form-control" name="placeofwork" required/>
+                    </div>
+                    <div class="form__item">
+                        <label for="RoofMaterial" class="form__label">Industry :</label>
+                        <input id="industryType" type="text" class="form-control" name="industry" required/>
+                    </div>
+                    <div class="form__item">
+                        <label for="RoofMaterial" class="form__label">Job Seeking :</label>
+                        <input type="radio" name="findingWork" value="Yes"/>
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="findingWork" value="No"/>
+                        <label for="no">No</label>
+                    </div>
+                    <div class="form__item">
+                        <label for="RoofMaterial" class="form__label">Mode Of Transportation:</label>
+                        <select name="modeOfTravel" id="modeOfTravel" class="form-control" required>
+                            <option value="Car">Car</option>
+                            <option value="On Foot">On Foot</option>
+                            <option value="Public Transit">Public Transit</option>
+                            <option value="Bicycle">Bicycle</option>
+                            <option value="Motorcycle">Motorcycle</option>
+                            <option value="Taxicab">Taxicab</option>
+                        </select>
+                    </div>
+                    <div class="form__item">
+                        <label for="RoofMaterial" class="form__label">Birthplace :</label>
+                        <input id="birthPlace" type="text" class="form-control" name="birthPlace"  required/>
+                    </div>
+                    <div class="form__item">
+                        <label for="RoofMaterial" class="form__label">Place Of Residence :</label>
+                        <input id="placeOfResidence" type="text" class="form-control" name="placeOfResidence" required/>
+                    </div>
+                    <div class="form__item">
+                        <label for="RoofMaterial" class="form__label">Prior Place Of Residence :</label>
+                        <input id="placeOfLastResidence" type="text" class="form-control" name="placeOfLastResidence" required/>
+                    </div>
+                    <div class="form__item">
+                        <label for="RoofMaterial" class="form__label">Children:For 0 input -1</label>
+                        <input id="Children" type="Number" class="form-control" name="Children" required/>
+                    </div>
+    
+    
+                    <button type="submit" class="form__btn">Submit</button>
+                </div>
+            </div>
+        </section>
+    </form>
+
+
+    <!--Footer-->
+    <footer id="main-footer">
+        <div class="container">
+            <div class="row centre-xs center-sm center-md center-lg">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <p>Copyright &copy; 2021 | E-Census</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/mainlogin.js"></script>
+</body>
+
+</html>
